@@ -9,20 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Matheus Silva | Front-end</title>
 </head>
 
 <body>
     <main>
         <section class="menu">
             <ul>
-                <li>Minhas Skils</li>
-                <li>Projetos</li>
-                <li>Sobre mim</li>
-                <li>Contatos</li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#skills">Minhas Skils</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Contatos</a></li>
             </ul>
         </section>
-        <section class="main">
+        <section id="about-me" class="main">
             <section>
                 <div class="name-stack">
                     <h1>Matheus da Silva Souza</h1>
@@ -31,9 +31,9 @@
                 <div class="linha"></div>
                 <h4 class="location">São Luis, MA</h4>
             </section>
-            <img src="./assets/seta.svg" alt="" srcset="">
+            <img src="./assets/seta.svg" onclick="scrollTo100VH()" alt="" srcset="">
         </section>
-        <section class="skills-container main reveal">
+        <section id="skills" class="skills-container main reveal">
             <h1>Minhas Skills</h1>
             <section>
                 <div class="skill">
@@ -47,6 +47,7 @@
                 </div>
             </section>
         </section>
+        <section class="skills-container main reveal"></section>
     </main>
     <script src="./script.js"></script>
 </body>
