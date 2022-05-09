@@ -4,10 +4,19 @@
     box-sizing: border-box;
 }
 body{
+    position: relative;
     font-family: 'Merriweather', serif;
     scroll-behavior: smooth;
 }
+main{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+.content{
+    grid-column: 2;
+}
 .menu{
+    grid-column: 1;
     position: fixed;
     width: 250px;
     background-color: #121212;
@@ -41,28 +50,29 @@ body{
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 250px;
+    justify-content: space-around;
     min-height: 100vh;
 }
 .name-stack{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+.name-stack > h1{
+    margin-left: 20px;
+    font-size: 24px;
 }
 .name-stack > h4{
+    margin-left: 20px;
+    font-size: 16px;
     font-weight: lighter;
-}
-.location{
-    text-align: end;
-    margin-right: 150px;
 }
 .linha{
     border: .5px solid #000;
     width: 100%;
 }
 img{
-    max-width: 100px;
+    width: 100px;
     animation: 1s ease-in-out infinite alternate pulse;
 }
 .skills-container{
@@ -90,7 +100,6 @@ img{
 /* animações de scroll */
 .reveal{
     position: relative;
-    transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease-in-out;
 }
@@ -98,7 +107,7 @@ img{
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
-    animation: fade-bottom 1s ease-in-out;
+    animation: fade-bottom 1s ease-in-out backwards;
 }
 @keyframes fade-bottom {
     0% {
@@ -110,4 +119,9 @@ img{
       opacity: 1;
     }
   }
-  
+
+@media (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+}

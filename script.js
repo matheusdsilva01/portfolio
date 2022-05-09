@@ -13,11 +13,4 @@ function reveal() {
 
 }
 window.addEventListener("scroll", reveal);
-reveal()  
-
-function scrollTo100VH () {
-    window.scrollTo({
-        top: window.innerHeight,
-        behavior: 'smooth'
-    });
-}
+reveal()
