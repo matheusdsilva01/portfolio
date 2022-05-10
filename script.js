@@ -1,3 +1,24 @@
+const nome = document.querySelector("div.name-stack")
+const nameTop = document.querySelector("div.name-is-top")
+function nameIsTop() {
+    if(nome.getBoundingClientRect().top <=0){
+        nameTop.classList.add("active")
+        nome.classList.remove("active")
+        removeItemDisplay(nome)
+    } else {
+        nameTop.classList.remove("active")
+        nome.classList.add("active")
+        addItemDisplay(nome)
+    }
+}
+
+function removeItemDisplay (item) {
+    item.style.visibility="hidden"
+}
+function addItemDisplay (item) {
+    item.style.visibility="visible"
+}
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal")
     for (var i = 0; i < reveals.length; i++) {
@@ -12,5 +33,8 @@ function reveal() {
     }
 
 }
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", (e) => {
+    reveal()
+    nameIsTop()
+});
 reveal()

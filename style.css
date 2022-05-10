@@ -58,9 +58,24 @@ main{
     flex-direction: column;
     width: 100%;
 }
+.name-stack.active{
+    animation: 1s ease-in-out apperence;
+}
 .name-stack > h1{
     margin-left: 20px;
     font-size: 24px;
+}
+.name-is-top{
+    margin-left: 20px;
+    font-size: 24px;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    display: none;
+}
+.name-is-top.active{
+    animation: 1s ease-in-out apperence;
+    display: block;
 }
 .name-stack > h4{
     margin-left: 20px;
@@ -70,10 +85,6 @@ main{
 .linha{
     border: .5px solid #000;
     width: 100%;
-}
-img{
-    width: 100px;
-    animation: 1s ease-in-out infinite alternate pulse;
 }
 .skills-container{
     min-height: 100vh;
@@ -96,6 +107,14 @@ img{
         transform: scale(1);
     }
 }
+@keyframes apperence {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /* animações de scroll */
 .reveal{
@@ -107,7 +126,7 @@ img{
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
-    animation: fade-bottom 1s ease-in-out backwards;
+    animation: fade-bottom 1s ease-in-out forwards;
 }
 @keyframes fade-bottom {
     0% {
