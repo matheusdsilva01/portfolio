@@ -3,19 +3,19 @@
     padding:0px;
     box-sizing: border-box;
 }
-body{
+body {
     position: relative;
     font-family: 'Merriweather', serif;
     scroll-behavior: smooth;
 }
-main{
+main {
     display: grid;
     grid-template-columns: 250px 1fr;
 }
-.content{
+.content {
     grid-column: 2;
 }
-.menu{
+.menu {
     grid-column: 1;
     position: fixed;
     width: 250px;
@@ -30,7 +30,7 @@ main{
     font-weight: bold;
     z-index: 10;
 }
-.menu ul{
+.menu ul {
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -38,74 +38,100 @@ main{
     margin: 0;
     padding: 0;
 }
-.menu ul li{
+.menu ul li {
     cursor: pointer;
     list-style: none;
     margin-bottom: 20px;
 }
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
     color: #fff;
 }
-.main{
+.main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     min-height: 100vh;
 }
-.name-stack{
+.name-stack {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.name-stack.active{
+.name-stack.active {
     animation: 1s ease-in-out apperence;
 }
-.name-stack > h1{
+.name-stack > h1 {
     margin-left: 20px;
     font-size: 24px;
 }
-.name-is-top{
-    margin-left: 20px;
+.name-is-top {
+    width: 100%;
     font-size: 24px;
     position: fixed;
     z-index: 10;
     top: 20px;
     display: none;
 }
-.name-is-top.active{
+.name-is-top > h1 {
+    margin-left: 20px;
+}
+.name-is-top.active {
     animation: 1s ease-in-out apperence;
     display: block;
 }
-.name-stack > h4{
+.name-stack > h4 {
     margin-left: 20px;
     font-size: 16px;
     font-weight: lighter;
 }
-.linha{
+.linha {
     border: .5px solid #000;
     width: 100%;
 }
-.skills-container{
+.skills-container {
     min-height: 100vh;
-    background-color: rgb(221, 220, 220);
+    background-color: #f7f1f1;
 }
-.skills-container h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+.skills-container > .detalhes-conhecimento{
+    margin-top: 50px;
+    margin-left: 51px;
 }
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+.detalhes-conhecimento h3 {
+    font-family: Roboto;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.detalhes-conhecimento h1 {
+    font-size: 24px;
+}
+.skills-container > section.skills {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 411px;
+    padding: 23px 67px;
+    background-color: #0D0D0D;
+}
+section.skills .images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.images img{
+    opacity: 0;
+}
+.images img.show {
+    animation: visible 0.3s ease-in forwards;
+}
+@keyframes visible {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100%;
+  }
 }
 @keyframes apperence {
     0% {

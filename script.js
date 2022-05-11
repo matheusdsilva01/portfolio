@@ -1,5 +1,15 @@
 const nome = document.querySelector("div.name-stack")
 const nameTop = document.querySelector("div.name-is-top")
+const imagens = document.querySelectorAll(".images > img")
+function mostrarIconesSkills() {
+    [...imagens].map((item, index) => {
+        setTimeout(() => {
+            item.classList.add("show")
+        }, 300*index)
+    })
+}
+mostrarIconesSkills()
+
 function nameIsTop() {
     if(nome.getBoundingClientRect().top <=0){
         nameTop.classList.add("active")
