@@ -3,6 +3,10 @@
     padding:0px;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 body {
     position: relative;
     font-family: 'Merriweather', serif;
@@ -103,7 +107,7 @@ main {
     font-size: 18px;
 }
 .detalhes-conhecimento h1 {
-    font-size: 24px;
+    font-size: 28px;
 }
 .skills-container > section.skills {
     display: flex;
@@ -124,6 +128,109 @@ section.skills .images{
 }
 .images img.show {
     animation: visible 0.3s ease-in forwards;
+    animation-delay: 0.8s;
+}
+.projetos-container > h1 {
+    font-size: 28px;
+    margin-top: 150px;
+    margin-left: 57px;
+}
+
+.projetos-container .container-cards-projetos {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    padding: 0 57px;
+    grid-auto-flow: row;
+    grid-template-columns: 375px 375px;
+    row-gap: 20px;
+}
+.projetos-container .card-projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 375px;
+    height: 335px;
+    padding: 10px 15px;
+    background-color: #0D0D0D;
+    color: #fff;
+    font-family: 'Roboto';
+    border-radius: 2px;
+}
+.card-projeto:hover{
+    box-shadow: 0 0 5px #414141;
+    transition: all 0.2s;
+}
+.card-projeto > h2{
+    font-size: 24px;
+}
+.card-projeto img{
+    object-fit: cover;
+    border: 2px solid;
+    border-image: linear-gradient(215deg,#fff,#414141) 10;
+    width: 346px;
+    height: 175px;
+}
+.card-projeto img:hover{
+    box-shadow: 0 0 5px#fff;
+    transition: all 0.2s;
+}
+.card-projeto > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    height: 42px;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    color: #fff;
+    background-color: transparent;
+}
+.card-projeto > button:active{
+    background: linear-gradient(0deg, #919191, #1a1a1a);
+}
+.card-projeto > button:hover{
+    transition: all 0.2s;
+    background-color: #1a1a1a;
+}
+.card-projeto > button  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7f1f1;
+}
+.contatos h1 {
+    font-size: 38px;
+    max-width: 209px;
+}
+.contatos .linha {
+    max-width: 1px;
+    min-height: 100vh;
+}
+.contato:not(:first-child){
+    margin-top: 17px;
+}
+.contatos .meios-de-contato .contato {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.meios-de-contato .contato > *:not(:first-child){
+    float:left;
+    margin-left:10px;
+}
+.meios-de-contato .contato a {
+    display: flex;
+    place-items: center;
 }
 @keyframes visible {
   0% {

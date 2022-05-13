@@ -5,13 +5,23 @@ function mostrarIconesSkills() {
     [...imagens].map((item, index) => {
         setTimeout(() => {
             item.classList.add("show")
-        }, 300*index)
+        }, 100 * index)
     })
 }
-mostrarIconesSkills()
+function revealImagens() {
+    var reveals = document.querySelectorAll(".images > img")
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            mostrarIconesSkills()
+        }
+    }
+}
 
 function nameIsTop() {
-    if(nome.getBoundingClientRect().top <=0){
+    if (nome.getBoundingClientRect().top <= 0) {
         nameTop.classList.add("active")
         nome.classList.remove("active")
         removeItemDisplay(nome)
@@ -22,11 +32,11 @@ function nameIsTop() {
     }
 }
 
-function removeItemDisplay (item) {
-    item.style.visibility="hidden"
+function removeItemDisplay(item) {
+    item.style.visibility = "hidden"
 }
-function addItemDisplay (item) {
-    item.style.visibility="visible"
+function addItemDisplay(item) {
+    item.style.visibility = "visible"
 }
 
 function reveal() {
@@ -46,5 +56,7 @@ function reveal() {
 window.addEventListener("scroll", (e) => {
     reveal()
     nameIsTop()
+    revealImagens()
+
 });
 reveal()
