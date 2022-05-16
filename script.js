@@ -1,6 +1,14 @@
-const nome = document.querySelector("div.name-stack")
-const nameTop = document.querySelector("div.name-is-top")
-const imagens = document.querySelectorAll(".images > img")
+const nome = document.querySelector("div.name-stack");
+const nameTop = document.querySelector("div.name-is-top");
+const imagens = document.querySelectorAll(".images > img");
+const checkboxMenu = document.getElementById("checkbox-menu")
+const menu = document.querySelector("section.menu");
+const cardSkills = document.querySelector("#conhecimento > section.skills")
+
+checkboxMenu.addEventListener("click", () => {
+    menu.classList.toggle("active")
+})
+
 function mostrarIconesSkills() {
     [...imagens].map((item, index) => {
         setTimeout(() => {

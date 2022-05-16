@@ -16,12 +16,9 @@ main {
     display: grid;
     grid-template-columns: 250px 1fr;
 }
-.content {
-    grid-column: 2;
-}
 .menu {
-    grid-column: 1;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 250px;
     background-color: #121212;
     height: 100vh;
@@ -209,8 +206,8 @@ section.skills .images{
     background-color: #f7f1f1;
 }
 .contatos h1 {
-    font-size: 38px;
-    max-width: 209px;
+    font-size: 32px;
+    max-width: 275px;
 }
 .contatos .linha {
     max-width: 1px;
@@ -271,9 +268,86 @@ section.skills .images{
       opacity: 1;
     }
   }
+/* responsividade */
 
-@media (max-width: 768px) {
+.menu-hamburguer{
+    display: none;
+    position: fixed;
+    z-index: 20;
+    top: 20px;
+    right: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #checkbox-menu{
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+  }
+  
+  label span{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #121212;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1){
+    top: 0;
+  }
+  
+  label span:nth-child(2){
+    top: 8px;
+  }
+  
+  label span:nth-child(3){
+    top: 16px;
+  }
+  #checkbox-menu:checked + label span{
+      background-color: #f7f1f1;
+  }
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
+
+
+  @keyframes menu-fade-in {
+      
+    
+  }
+
+@media (max-width: 1200px) {
     .menu{
         display: none;
+    }
+    .menu.active {
+        width: 100%;
+        display: flex;
+    }
+    .menu-hamburguer{
+        display: flex;
+    }
+    main {
+        display: block;
     }
 }
