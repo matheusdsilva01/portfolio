@@ -3,10 +3,15 @@ const nameTop = document.querySelector("div.name-is-top");
 const imagens = document.querySelectorAll(".images > img");
 const checkboxMenu = document.getElementById("checkbox-menu")
 const menu = document.querySelector("section.menu");
-const cardSkills = document.querySelector("#conhecimento > section.skills")
+const cardSkills = document.querySelector("#conhecimento > section.skills");
+const [text, linha] = nameTop.children;
+const spans = document.getElementsByTagName("label");
+
 
 checkboxMenu.addEventListener("click", () => {
     menu.classList.toggle("active")
+    text.classList.toggle("white");
+    linha.classList.toggle("white");
 })
 
 function mostrarIconesSkills() {
@@ -16,6 +21,7 @@ function mostrarIconesSkills() {
         }, 100 * index)
     })
 }
+
 function revealImagens() {
     var reveals = document.querySelectorAll(".images > img")
     for (var i = 0; i < reveals.length; i++) {
@@ -37,6 +43,16 @@ function nameIsTop() {
         nameTop.classList.remove("active")
         nome.classList.add("active")
         addItemDisplay(nome)
+    }
+}
+
+function changeColorNameIsTop() {
+    if (cardSkills.getBoundingClientRect().top < 40 && cardSkills.getBoundingClientRect().top > -380) {
+        text.classList.add("white");
+        linha.classList.add("white");
+    } else {
+        text.classList.remove("white");
+        linha.classList.remove("white");
     }
 }
 
@@ -65,6 +81,7 @@ window.addEventListener("scroll", (e) => {
     reveal()
     nameIsTop()
     revealImagens()
-
+    changeColorNameIsTop()
 });
+changeColorNameIsTop()
 reveal()
