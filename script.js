@@ -5,13 +5,20 @@ const checkboxMenu = document.getElementById("checkbox-menu")
 const menu = document.querySelector("section.menu");
 const cardSkills = document.querySelector("#conhecimento > section.skills");
 const [text, linha] = nameTop.children;
-const spans = document.getElementsByTagName("label");
-
+const spans = document.querySelectorAll("label > span");
 
 checkboxMenu.addEventListener("click", () => {
     menu.classList.toggle("active")
     text.classList.toggle("white");
     linha.classList.toggle("white");
+    spans.forEach(span => {
+        span.classList.toggle("white");
+    });
+    if (menu.classList.contains("active")) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "auto";
+    }
 })
 
 function mostrarIconesSkills() {
@@ -50,9 +57,15 @@ function changeColorNameIsTop() {
     if (cardSkills.getBoundingClientRect().top < 40 && cardSkills.getBoundingClientRect().top > -380) {
         text.classList.add("white");
         linha.classList.add("white");
+        spans.forEach(span => {
+            span.classList.add("white")
+        })
     } else {
         text.classList.remove("white");
         linha.classList.remove("white");
+        spans.forEach(span => {
+            span.classList.remove("white")
+        })
     }
 }
 
