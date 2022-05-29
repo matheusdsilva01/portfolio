@@ -8,17 +8,20 @@ const [text, linha] = nameTop.children;
 const spans = document.querySelectorAll("label > span");
 
 checkboxMenu.addEventListener("click", () => {
+    // if (text.classList.contains("white")) {
+    //     menu.classList.toggle("active")
+    //     document.body.style.overflow = menu.classList.contains("active") ? "hidden" : "auto"
+    //     // return
+    // }
+
     menu.classList.toggle("active")
     text.classList.toggle("white");
     linha.classList.toggle("white");
     spans.forEach(span => {
-        span.classList.toggle("white");
+        span.classList.toggle("active");
     });
-    if (menu.classList.contains("active")) {
-        document.body.style.overflow = "hidden";
-    } else {
-        document.body.style.overflow = "auto";
-    }
+    menu.classList.contains("active") ? "hidden" : "auto"
+
 })
 
 function mostrarIconesSkills() {
