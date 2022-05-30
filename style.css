@@ -71,18 +71,15 @@ main {
     font-size: 24px;
     position: fixed;
     z-index: 10;
-    top: 20px;
+    top: 0;
+    background-color: #fff;
+    padding-top: 20px;
     display: none;
 }
 .name-is-top > h1 {
     margin-left: 20px;
 }
-.name-is-top > h1.white{
-    color: #fff;
-}
-.name-is-top > .linha.white {
-    border-color: #fff;
-}
+
 .name-is-top.active {
     animation: 1s ease-in-out apperence;
     display: block;
@@ -314,9 +311,6 @@ section.skills .images{
     border-radius: 30px;
     background-color: #121212;
     transition: 0.25s ease-in-out;
-  }
-  label span.white{
-      background-color: #fff;
   }
   
   label span:nth-child(1){

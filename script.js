@@ -8,20 +8,8 @@ const [text, linha] = nameTop.children;
 const spans = document.querySelectorAll("label > span");
 
 checkboxMenu.addEventListener("click", () => {
-    // if (text.classList.contains("white")) {
-    //     menu.classList.toggle("active")
-    //     document.body.style.overflow = menu.classList.contains("active") ? "hidden" : "auto"
-    //     // return
-    // }
-
-    menu.classList.toggle("active")
-    text.classList.toggle("white");
-    linha.classList.toggle("white");
-    spans.forEach(span => {
-        span.classList.toggle("active");
-    });
+    menu.classList.toggle("active");
     menu.classList.contains("active") ? "hidden" : "auto"
-
 })
 
 function mostrarIconesSkills() {
@@ -46,29 +34,19 @@ function revealImagens() {
 
 function nameIsTop() {
     if (nome.getBoundingClientRect().top <= 0) {
+        spans.forEach(span => {
+            span.classList.remove("active")
+        })
         nameTop.classList.add("active")
         nome.classList.remove("active")
         removeItemDisplay(nome)
     } else {
+        spans.forEach(span => {
+            span.classList.add("active")
+        })
         nameTop.classList.remove("active")
         nome.classList.add("active")
         addItemDisplay(nome)
-    }
-}
-
-function changeColorNameIsTop() {
-    if (cardSkills.getBoundingClientRect().top < 40 && cardSkills.getBoundingClientRect().top > -380) {
-        text.classList.add("white");
-        linha.classList.add("white");
-        spans.forEach(span => {
-            span.classList.add("white")
-        })
-    } else {
-        text.classList.remove("white");
-        linha.classList.remove("white");
-        spans.forEach(span => {
-            span.classList.remove("white")
-        })
     }
 }
 
@@ -93,11 +71,10 @@ function reveal() {
     }
 
 }
-window.addEventListener("scroll", (e) => {
+
+window.addEventListener("scroll", () => {
     reveal()
     nameIsTop()
     revealImagens()
-    changeColorNameIsTop()
 });
-changeColorNameIsTop()
 reveal()
