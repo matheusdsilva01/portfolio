@@ -78,3 +78,4 @@ window.addEventListener("scroll", () => {
     revealImagens()
 });
 reveal()
+nameIsTop()
