@@ -6,6 +6,46 @@ const menu = document.querySelector("section.menu");
 const cardSkills = document.querySelector("#conhecimento > section.skills");
 const [text, linha] = nameTop.children;
 const spans = document.querySelectorAll("label > span");
+const containerCardsProjetos = document.getElementById('container-cards-projetos');
+import { projects } from './assets/projects.js';
+
+projects.map(project => {
+    createCardProject(project);
+})
+
+
+function createCardProject({ imgSRC, title, link }) {
+    // div pai
+    let cardProject = document.createElement("div");
+    cardProject.classList.add('card-projeto');
+    // content project
+    let content = document.createElement("div");
+    cardProject.appendChild(content);
+    content.classList.add('content');
+    //img in HTML
+    let img = document.createElement("img");
+    img.setAttribute("src", imgSRC);
+    img.setAttribute("alt", title)
+    content.appendChild(img);
+    // title in HTML
+    let h2 = document.createElement("h2");
+    h2.innerHTML = title;
+    content.appendChild(h2);
+
+    // button link
+    let button = document.createElement("button");
+    button.setAttribute('type', 'button');
+    let a = document.createElement("a");
+    a.setAttribute('target', '_blank')
+    a.href = link;
+    a.innerHTML = "Ver mais";
+    button.appendChild(a);
+    // add all div pai
+    cardProject.appendChild(button);
+    // add in HTML
+    containerCardsProjetos.appendChild(cardProject)
+}
+
 
 checkboxMenu.addEventListener("click", () => {
     menu.classList.toggle("active");
