@@ -13,5 +13,10 @@ export const projects = [
         title: 'Pomodoro-clock',
         imgSRC: './assets/imgs-projects/pomodoro-clock.png',
         link: 'https://github.com/matheusdsilva01/Pomodoro'
+    },
+    {
+        title: 'Rick and Morty',
+        imgSRC: './assets/imgs-projects/rick-and-morty.png',
+        link: 'https://github.com/matheusdsilva01/rick-and-morty'
     }
 ]
