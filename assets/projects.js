@@ -18,5 +18,10 @@ export const projects = [
         title: 'Rick and Morty',
         imgSRC: './assets/imgs-projects/rick-and-morty.png',
         link: 'https://github.com/matheusdsilva01/rick-and-morty'
+    },
+    {
+        title: 'Math random',
+        imgSRC: './assets/imgs-projects/math-random.png',
+        link: 'https://github.com/matheusdsilva01/math-random'
     }
 ]
