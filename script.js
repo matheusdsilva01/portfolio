@@ -3,7 +3,6 @@ const nameTop = document.querySelector("div.name-is-top");
 const imagens = document.querySelectorAll(".images > img");
 const checkboxMenu = document.getElementById("checkbox-menu")
 const menu = document.querySelector("section.menu");
-const cardSkills = document.querySelector("#conhecimento > section.skills");
 const [text, linha] = nameTop.children;
 const spans = document.querySelectorAll("label > span");
 const containerCardsProjetos = document.getElementById('container-cards-projetos');

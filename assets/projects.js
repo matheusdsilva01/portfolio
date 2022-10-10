@@ -23,5 +23,10 @@ export const projects = [
         title: 'Math random',
         imgSRC: './assets/imgs-projects/math-random.png',
         link: 'https://github.com/matheusdsilva01/math-random'
+    },
+    {
+        title: 'Buscar filmes',
+        imgSRC: './assets/imgs-projects/buscar-filmes.png',
+        link: 'https://github.com/matheusdsilva01/buscar-filmes'
     }
 ]
