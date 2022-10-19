@@ -57,14 +57,22 @@ main {
     color: #fff;
 }
 
-.menu ul li a:hover::after {
+.menu ul li a {
+    transition: 0.3s ease-out;
+}
+
+.menu ul li a::after {
+    animation: reverse-underline-full-width 0.3s forwards;
     content: "";
     border-bottom: 2px solid #fff;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    animation: underline-full-width 0.3s;
+}
+
+.menu ul li a:hover::after {
+    animation: underline-full-width 0.3s forwards;
 }
 
 @keyframes underline-full-width {
@@ -74,6 +82,16 @@ main {
 
     100% {
         width: 100%;
+    }
+}
+
+@keyframes reverse-underline-full-width {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
     }
 }
 
