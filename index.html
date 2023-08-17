@@ -1,91 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-icon">
-    <title>Matheus Silva | Front-end developer</title>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta property="title" content="Matheus Silva, Front-end developer" />
+  <meta property="description" content="Desenvolvedor front end React, next, vue">
+  <meta property="og:title" content="Matheus Silva, Front-end developer" />
+  <meta property="og:description" content="Desenvolvedor front end React, next, vue">
+  <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+  <title>Matheus Silva | Front-end developer</title>
 </head>
 
-<body>
-    <main>
-        <div class="menu-hamburguer">
-            <input type="checkbox" id="checkbox-menu"/>
-            <label for="checkbox-menu">
-                <span class="" ></span>
-                <span class="" ></span>
-                <span class="" ></span>
-            </label>
-        </div>
-        <section class="menu">
-            <ul>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#conhecimento">Minhas Skils</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
-        </section>
-        <section class="content">
-            <section id="sobre-mim" class="main">
-                <section>
-                    <div class="name-stack active">
-                        <h1 class="">Matheus da Silva Souza</h1>
-                        <div class="linha"></div>
-                        <h4>Desenvolvedor web Front-end | ReactJs</h4>
-                    </div>
-                    <div class="name-is-top">
-                        <h1>Matheus da Silva Souza</h1>
-                        <div class="linha"></div>
-                    </div>
-                </section>
-            </section>
-            <section id="conhecimento" class="skills-container main reveal">
-                <div class="detalhes-conhecimento">
-                    <h1>Meu conhecimento</h1>
-                    <h3>Como desenvolvedor front-end, tenho a capacidade de desenvolver aplicações web responsivas e dinâmicas utilizando tecnologias como React e Next. Além disso, sou familiarizado com metodologias ágeis como Scrum, o que me permite trabalhar de forma eficiente em equipes colaborativas e entregar soluções de alta qualidade em um ambiente ágil.</h3>
-                </div>
-                <section class="skills">
-                    <div class="images">
-                    </div>
-                </section>
-            </section>
-            <section id="projetos" class="projetos-container main reveal">
-                <h1>Projetos</h1>
-                <section class="container-cards-projetos" id="container-cards-projetos">
-
-                </section>
-            </section>
-            <section id="contatos" class="contatos main reveal">
-                <h1>
-                    Entre em contato comigo:
-                </h1>
-                <div class="linha"></div>
-                <section class="meios-de-contato">
-                    <div class="contato">
-                        <img src="./assets/icons/gmail.svg" alt="icon gmail preto e branco">
-                        <a target="_blank" href="mailto:ms25022003@gmail.com">ms25022003@gmail.com
-                            <img src="./assets/icons/send.svg" alt="icon de envio">
-                        </a>
-                    </div>
-                    <div class="contato">
-                        <img src="./assets/icons/linkedin.svg" alt="icon gmail preto e branco">
-                        <a target="_blank" href="https://www.linkedin.com/in/matheus-silva-ti/">Matheus Silva
-                            <img src="./assets/icons/send.svg" alt="icon de envio">
-                        </a>
-                    </div>
-                </section>
-            </section>
-        </section>
-    </main>
-    <script type="module" src="./skills.js"></script>
-    <script type="module" src="./script.js"></script>
+<body class="bg-white">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>
