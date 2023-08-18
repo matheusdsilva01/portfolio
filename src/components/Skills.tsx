@@ -1,69 +1,7 @@
 import * as Tooltip from "@radix-ui/react-tooltip";
+import { skills } from "assets/skills.ts";
 
-const skills = [
-  {
-    logoSRC: "./src/assets/skills/html5.svg",
-    alt: "html5"
-  },
-  {
-    logoSRC: "./src/assets/skills/css3.svg",
-    alt: "css3"
-  },
-  {
-    logoSRC: "./src/assets/skills/javascript.svg",
-    alt: "javascript"
-  },
-  {
-    logoSRC: "./src/assets/skills/react.svg",
-    alt: "react"
-  },
-  {
-    logoSRC: "./src/assets/skills/scss.svg",
-    alt: "scss"
-  },
-  {
-    logoSRC: "./src/assets/skills/bootstrap.svg",
-    alt: "bootstrap"
-  },
-  {
-    logoSRC: "./src/assets/skills/tailwind.svg",
-    alt: "tailwind"
-  },
-  {
-    logoSRC: "./src/assets/skills/typescript.svg",
-    alt: "typescript"
-  },
-  {
-    logoSRC: "./src/assets/skills/jest.svg",
-    alt: "jest"
-  },
-  {
-    logoSRC: "./src/assets/skills/redux.svg",
-    alt: "redux"
-  },
-  {
-    logoSRC: "./src/assets/skills/git.svg",
-    alt: "git"
-  },
-  {
-    logoSRC: "./src/assets/skills/figma.svg",
-    alt: "figma"
-  },
-  {
-    logoSRC: "./src/assets/skills/github.svg",
-    alt: "github"
-  },
-  {
-    logoSRC: "./src/assets/skills/mysql.svg",
-    alt: "mysql"
-  },
-  {
-    logoSRC: "./src/assets/skills/mongo.svg",
-    alt: "mongo"
-  }
-];
-
-const Skills = () => {
+const SkillsSections = () => {
   return (
     <div className="min-h-[288px] w-full space-y-2 bg-primary-50 px-5 py-14 md:h-96 md:space-y-4">
       <h3 className="text-2xl text-primary-900">Minhas Skills:</h3>
@@ -94,4 +32,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsSections;

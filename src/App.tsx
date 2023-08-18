@@ -1,7 +1,7 @@
 import LinksCard from "components/LinksCard";
 import ProjectsSections from "components/ProjectsSections";
 import ResumeCard from "components/ResumeCard";
-import Skills from "components/Skills";
+import SkillsSections from "components/Skills";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <LinksCard />
       </div>
       <div className="space-y-5">
-        <Skills />
+        <SkillsSections />
         <ProjectsSections />
       </div>
     </div>
