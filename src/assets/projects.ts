@@ -4,6 +4,7 @@ import ImgCtdEcommerce from "@/assets/imgs-projects/ctd-e-commerce.png";
 import ImgMathRandom from "@/assets/imgs-projects/math-random.png";
 import ImgPomodoroClock from "@/assets/imgs-projects/pomodoro-clock.png";
 import ImgRickAndMorty from "@/assets/imgs-projects/rick-and-morty.png";
+import ImgSports from "@/assets/imgs-projects/sports.png";
 
 export const projects = [
   {
@@ -49,5 +50,13 @@ export const projects = [
     imgSRC: ImgBuscarFilmes,
     github: "https://github.com/matheusdsilva01/buscar-filmes",
     site: "https://buscar-filmes.vercel.app/"
+  },
+  {
+    name: "Sports",
+    description:
+      "Projeto feito com Html e css para criação de uma landing page estática e responsiva, com design já predefinido no Figma.",
+    imgSRC: ImgSports,
+    github: "https://github.com/matheusdsilva01/clone-design",
+    site: "https://matheusdsilva01.github.io/clone-design/"
   }
 ];
