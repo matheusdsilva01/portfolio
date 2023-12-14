@@ -1,5 +1,6 @@
 import * as Tooltip from "@radix-ui/react-tooltip";
-import { skills } from "assets/skills.ts";
+
+import { skills } from "../assets/skills";
 
 const SkillsSections = () => {
   return (

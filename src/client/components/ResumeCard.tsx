@@ -7,7 +7,7 @@ const ResumeCard = () => {
         <a
           href="/portfolio/Matheus-Silva cv.pdf"
           download="matheus-silva-cv.pdf"
-          className="hover:shadow-lg block w-full shadow-primary-200 transition-shadow"
+          className="block w-full shadow-primary-200 transition-shadow hover:shadow-lg"
         >
           Download CV
         </a>

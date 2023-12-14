@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "./src/client",
     "paths": {
-      "@/*": ["src/*"],
-      "@/components/*": ["src/components/*"]
+      "@/*": ["src/client/*"],
+      "@/components/*": ["src/client/components/*"]
     },
     "composite": true,
     "skipLibCheck": true,
