@@ -2,7 +2,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 import eslintPlugin from "vite-plugin-eslint";
-const ASSET_URL = process.env.ASSET_URL || "/portfolio";
+const ASSET_URL = process.env.VITE_ASSET_URL || "/portfolio";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
