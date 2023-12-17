@@ -17,10 +17,7 @@ function Home() {
         .join(", ");
 
       try {
-        console.log(response);
-        const baseUrl =
-          process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-        await axios.post(`${baseUrl}/api/location`, { location });
+        await axios.post("/api/location", { location });
       } catch (err) {
         console.log(err);
       }

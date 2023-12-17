@@ -26,7 +26,7 @@ const Contact = () => {
       }
     ];
     try {
-      await axios.post("api/message", fields);
+      await axios.post("/api/message", fields);
       toast.success("Mensagem enviada com sucesso!");
     } catch (err) {
       console.log(err);
