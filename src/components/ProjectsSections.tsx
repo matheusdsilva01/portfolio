@@ -1,9 +1,12 @@
+"use client";
+import Image from "next/image";
 import { useState } from "react";
 
-import { projects } from "../assets/projects";
+import { projects } from "@/assets/projects";
 const ProjectsSections = () => {
   const [projectToView, setProjectToView] = useState("Buscar filmes");
   const project = projects.find(project => project.name === projectToView);
+
   return (
     <div className="min-h-[288px] w-full space-y-2 bg-primary-50 px-5 py-14 md:space-y-4 lg:h-96">
       <h3 className="text-2xl text-primary-900 md:text-base">Projetos:</h3>
@@ -33,7 +36,7 @@ const ProjectsSections = () => {
         <div className="w-full lg:flex">
           {project && (
             <>
-              <img
+              <Image
                 src={project.imgSRC}
                 alt="alt to project"
                 className="m-auto w-full max-w-xs object-cover md:w-80 md:max-w-none"

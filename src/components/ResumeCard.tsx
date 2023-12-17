@@ -5,7 +5,7 @@ const ResumeCard = () => {
       <h4 className="!mt-0 text-lg md:text-2xl">Desenvolvedor Front End</h4>
       <button className="w-full rounded border border-black text-lg hover:bg-primary-50 active:bg-primary-100">
         <a
-          href="/portfolio/Matheus-Silva cv.pdf"
+          href="/Matheus-Silva cv.pdf"
           download="matheus-silva-cv.pdf"
           className="block w-full shadow-primary-200 transition-shadow hover:shadow-lg"
         >

@@ -1,6 +1,8 @@
-import * as Tooltip from "@radix-ui/react-tooltip";
+"use client";
+import Image from "next/image";
 
-import { skills } from "../assets/skills";
+import { skills } from "@/assets/skills";
+import * as Tooltip from "@radix-ui/react-tooltip";
 
 const SkillsSections = () => {
   return (
@@ -12,7 +14,7 @@ const SkillsSections = () => {
           <Tooltip.Provider delayDuration={0} key={skill.alt}>
             <Tooltip.Root>
               <Tooltip.Trigger asChild>
-                <img
+                <Image
                   src={skill.logoSRC}
                   alt={skill.alt}
                   key={skill.logoSRC}

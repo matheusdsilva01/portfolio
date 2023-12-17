@@ -1,3 +1,4 @@
+"use client";
 import { toast } from "react-toastify";
 
 import axios from "axios";
@@ -25,7 +26,7 @@ const Contact = () => {
       }
     ];
     try {
-      await axios.post("/message", fields);
+      await axios.post("api/message", fields);
       toast.success("Mensagem enviada com sucesso!");
     } catch (err) {
       console.log(err);
