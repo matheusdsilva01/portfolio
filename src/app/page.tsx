@@ -11,12 +11,12 @@ import axios from "axios";
 function Home() {
   useEffect(() => {
     (async () => {
-      const response = await axios.get("https://ipapi.co/json/");
-      const location = Array.from(Object.entries(response.data))
-        .map(el => el.join(": "))
-        .join(", ");
-
+      if (process.env.NODE_ENV === "development") return;
       try {
+        const response = await axios.get("https://ipapi.co/json/");
+        const location = Array.from(Object.entries(response.data))
+          .map(el => el.join(": "))
+          .join(", ");
         await axios.post("/api/location", { location });
       } catch (err) {
         console.log(err);
