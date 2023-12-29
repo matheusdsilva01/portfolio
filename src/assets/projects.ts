@@ -1,4 +1,3 @@
-import ImgBiblioTech from "@/assets/imgs-projects/biblio-tech.png";
 import ImgBuscarFilmes from "@/assets/imgs-projects/buscar-filmes.png";
 import ImgCtdEcommerce from "@/assets/imgs-projects/ctd-e-commerce.png";
 import ImgMathRandom from "@/assets/imgs-projects/math-random.png";
@@ -10,35 +9,31 @@ export const projects = [
   {
     name: "CTD E-Commerce",
     description:
-      "Projeto de e-commerce para o curso de Desenvolvimento Web Full Stack da CTD",
+      "Projeto de e-commerce para o curso de Desenvolvimento Web Full Stack da CTD, um sistema de e-commerce para compra de produtos online, com listagem de produtos, carrinho de compras, checkout e finalização de pedido.",
     imgSRC: ImgCtdEcommerce,
     github: "https://github.com/matheusdsilva01/CTD_Commerce_Frontend",
     site: "https://ctd-commerce-frontend-omega.vercel.app/"
   },
   {
-    name: "Biblio-tech",
-    description: "Projeto de biblioteca",
-    imgSRC: ImgBiblioTech,
-    github: "https://github.com/matheusdsilva01/Front-end-biblioteca",
-    site: "https://front-end-biblioteca.vercel.app/"
-  },
-  {
     name: "Pomodoro-clock",
-    description: "Projeto de cronômetro",
+    description:
+      "O Pomodoro clock é uma aplicação web para aprimorar a produtividade, melhorar o gerenciamento do tempo por meio da comprovada técnica Pomodoro juntamente com gerenciamento de tarefas.",
     imgSRC: ImgPomodoroClock,
     github: "https://github.com/matheusdsilva01/Pomodoro",
     site: "https://pomodor.vercel.app/"
   },
   {
     name: "Rick and Morty",
-    description: "Projeto usando API do Rick and Morty para buscar personagens",
+    description:
+      "Projeto para busca de personagens da série Rick and Morty, usando API do Rick and Morty com seleção de favoritos e filtro de personagens.",
     imgSRC: ImgRickAndMorty,
     github: "https://github.com/matheusdsilva01/rick-and-morty",
     site: "https://rick-and-morty-livid.vercel.app/"
   },
   {
     name: "Math random",
-    description: "Projeto para cálculos matemáticos aleatórios",
+    description:
+      "Projeto para geração de calculos matermáticos aleatórios usando as 4 operações básicas e com visualização de acertos e erros.",
     imgSRC: ImgMathRandom,
     github: "https://github.com/matheusdsilva01/math-random",
     site: "https://math-random-chi.vercel.app/"
@@ -46,7 +41,7 @@ export const projects = [
   {
     name: "Buscar filmes",
     description:
-      "Projeto para buscar filmes usando API do The Movie DB e API de vídeos do Youtube",
+      "Projeto para busca de filmes usando API do The Movie DB(TMDB) e api do youtube, mostrando os filmes que são destaques da semana e filtro de filmes.",
     imgSRC: ImgBuscarFilmes,
     github: "https://github.com/matheusdsilva01/buscar-filmes",
     site: "https://buscar-filmes.vercel.app/"
