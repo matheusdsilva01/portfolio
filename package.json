@@ -7,14 +7,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "eslint \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "^1.0.6",
     "axios": "^1.6.2",
     "next": "^14.0.4",
+    "next-intl": "^3.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

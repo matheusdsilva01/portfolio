@@ -1,9 +1,11 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { toast } from "react-toastify";
 
 import axios from "axios";
 
 const Contact = () => {
+  const t = useTranslations();
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const { email, subject, message } = e.currentTarget;
@@ -36,7 +38,7 @@ const Contact = () => {
   return (
     <div className="min-h-[70vh] w-full space-y-2 bg-primary-50 px-5 py-14">
       <h2 className="text-center text-2xl font-medium text-primary-900 md:text-3xl">
-        Entre em contato
+        {t("contact.title")}
       </h2>
       <form
         onSubmit={onSubmit}
@@ -47,14 +49,14 @@ const Contact = () => {
             id="email"
             className="block w-full appearance-none rounded-lg border border-[#C4C4C4] bg-transparent px-2.5 pb-2.5 pt-4 text-sm placeholder:text-sm placeholder:text-[#C4C4C4] focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#C4C4C4]"
             type="text"
-            placeholder="Digite seu email"
+            placeholder={t("contact.placeholder.email")}
             name="email"
           />
           <label
             htmlFor="email"
             className="undefined absolute start-3 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-primary-50 px-2 text-sm font-normal text-zinc-600 duration-300"
           >
-            Email
+            {t("contact.input.email")}
           </label>
         </div>
         <div className="relative">
@@ -62,35 +64,35 @@ const Contact = () => {
             id="subject"
             className="block w-full appearance-none rounded-lg border border-[#C4C4C4] bg-transparent px-2.5 pb-2.5 pt-4 text-sm placeholder:text-sm placeholder:text-[#C4C4C4] focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#C4C4C4]"
             type="text"
-            placeholder="Assunto"
+            placeholder={t("contact.placeholder.subject")}
             name="subject"
           />
           <label
             htmlFor="subject"
             className="undefined absolute start-3 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-primary-50 px-2 text-sm font-normal text-zinc-600 duration-300"
           >
-            Assunto
+            {t("contact.input.subject")}
           </label>
         </div>
         <div className="relative">
           <textarea
             id="message"
             className="block h-[368px] w-full appearance-none rounded-lg border border-[#C4C4C4] bg-transparent px-2.5 pb-2.5 pt-4 text-sm placeholder:text-sm placeholder:text-[#C4C4C4] focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#C4C4C4]"
-            placeholder="Mensagem"
+            placeholder={t("contact.placeholder.message")}
             name="message"
           ></textarea>
           <label
             htmlFor="message"
             className="undefined absolute start-3 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-primary-50 px-2 text-sm font-normal text-zinc-600 duration-300"
           >
-            Mensagem
+            {t("contact.input.message")}
           </label>
         </div>
         <button
           type="submit"
           className="hover:shadow-inset-gray float-right w-full max-w-[280px] border border-primary-950 text-sm leading-8 transition-all hover:shadow md:text-base"
         >
-          Enviar mensagem
+          {t("contact.sendButton")}
         </button>
       </form>
     </div>

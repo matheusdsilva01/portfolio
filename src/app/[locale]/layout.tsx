@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
@@ -12,17 +13,22 @@ export const metadata: Metadata = {
   description: "Desenvolvedor front end React, next, vue"
 };
 
-export default function RootLayout({
-  children
+export default function LocaleLayout({
+  children,
+  params: { locale }
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
+  const messages = useMessages();
   return (
-    <html lang="pt-BR">
-      <body className={inter.className}>
-        {children}
-        <ToastContainer />
-      </body>
+    <html lang={locale}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <body className={inter.className}>
+          {children}
+          <ToastContainer />
+        </body>
+      </NextIntlClientProvider>
     </html>
   );
 }

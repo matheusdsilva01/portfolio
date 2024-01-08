@@ -1,20 +1,28 @@
 "use client";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 
 import { projects } from "@/assets/projects";
 const ProjectsSections = () => {
   const [projectToView, setProjectToView] = useState("Buscar filmes");
-  const project = projects.find(project => project.name === projectToView);
+  const t = useTranslations();
+  const locale = useLocale() as "pt-BR" | "en";
+  const project = projects[locale].find(
+    project => project.name === projectToView
+  );
+  const localeProjects = projects[locale];
 
   return (
     <div className="min-h-[288px] w-full space-y-2 bg-primary-50 px-5 py-14 md:space-y-4 lg:h-96">
-      <h3 className="text-2xl text-primary-900 md:text-base">Projetos:</h3>
+      <h3 className="text-2xl text-primary-900 md:text-base">
+        {t("projects.title")}
+      </h3>
       <hr className="border-black/50" />
       <div className="flex flex-col gap-8 lg:flex-row">
         <div className="flex-none overflow-y-auto bg-primary-100 md:w-[302px]">
           {/* select project to view */}
-          {projects.map(project => (
+          {localeProjects.map(project => (
             <div
               key={project.name}
               onClick={() => setProjectToView(project.name)}
@@ -37,6 +45,7 @@ const ProjectsSections = () => {
           {project && (
             <>
               <Image
+                placeholder="blur"
                 src={project.imgSRC}
                 alt="alt to project"
                 className="m-auto w-full max-w-xs object-cover md:w-80 md:max-w-none"
@@ -55,7 +64,7 @@ const ProjectsSections = () => {
                       rel="noreferrer"
                       className="block w-full text-sm leading-8 md:text-base"
                     >
-                      Visitar site
+                      {t("projects.visitWebSite")}
                     </a>
                   </button>
                   <button className="hover:shadow-inset-gray w-full max-w-[280px] border border-primary-950 text-base transition-all hover:shadow">
@@ -65,7 +74,7 @@ const ProjectsSections = () => {
                       rel="noreferrer"
                       className="block w-full text-sm leading-8 md:text-base"
                     >
-                      Visitar GitHub
+                      {t("projects.visitRepository")}
                     </a>
                   </button>
                 </div>

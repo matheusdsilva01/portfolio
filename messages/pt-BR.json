@@ -1,0 +1,23 @@
+{
+    "occupation": "Desenvolvedor Front End",
+    "mySkills": "Minhas Skills:",
+    "projects": {
+      "title": "Projetos:",
+      "visitWebSite": "Visitar site",
+      "visitRepository": "Visitar GitHub"
+    },
+    "contact": {
+      "title": "Entre em contato comigo",
+      "sendButton": "Enviar Mensagem",
+      "input": {
+        "email": "Email",
+        "subject": "Assunto",
+        "message": "Mensagem"
+      },
+      "placeholder": {
+        "email": "Digite seu email",
+        "subject": "Assunto",
+        "message": "Mensagem"
+      }
+    }
+}

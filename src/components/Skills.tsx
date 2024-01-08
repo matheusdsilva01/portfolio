@@ -1,13 +1,15 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import { skills } from "@/assets/skills";
 import * as Tooltip from "@radix-ui/react-tooltip";
 
 const SkillsSections = () => {
+  const t = useTranslations();
   return (
     <div className="min-h-[288px] w-full space-y-2 bg-primary-50 px-5 py-14 md:h-96 md:space-y-4">
-      <h3 className="text-2xl text-primary-900">Minhas Skills:</h3>
+      <h3 className="text-2xl text-primary-900">{t("mySkills")}</h3>
       <hr className="border-black/50" />
       <div className="flex flex-wrap gap-x-6 gap-y-5">
         {skills.map(skill => (
