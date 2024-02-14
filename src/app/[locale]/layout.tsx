@@ -3,6 +3,8 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 
@@ -27,6 +29,7 @@ export default function LocaleLayout({
         <body className={inter.className}>
           {children}
           <ToastContainer />
+          <Analytics />
         </body>
       </NextIntlClientProvider>
     </html>
