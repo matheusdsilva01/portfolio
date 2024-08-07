@@ -10,6 +10,7 @@ import LogoJava from "@/assets/skills/java.svg";
 import LogoJavascript from "@/assets/skills/javascript.svg";
 import LogoJest from "@/assets/skills/jest.svg";
 import LogoMongo from "@/assets/skills/mongo.svg";
+import LogoMui from "@/assets/skills/mui.svg";
 import LogoMysql from "@/assets/skills/mysql.svg";
 import LogoNextjs from "@/assets/skills/next.svg";
 import LogoNode from "@/assets/skills/node.svg";
@@ -23,80 +24,68 @@ import LogoVue from "@/assets/skills/vue.svg";
 export const skills = [
   {
     logoSRC: LogoHtml5,
-    alt: "html5"
+    label: "Html"
   },
   {
     logoSRC: LogoCss3,
-    alt: "css3"
+    label: "Css"
   },
   {
     logoSRC: LogoJavascript,
-    alt: "javascript"
+    label: "Javascript"
   },
   {
     logoSRC: LogoTypescript,
-    alt: "typescript"
+    label: "Typescript"
   },
   {
     logoSRC: LogoReact,
-    alt: "react"
+    label: "React"
   },
   {
     logoSRC: LogoNextjs,
-    alt: "NextJs"
+    label: "NextJs"
   },
-  { logoSRC: LogoVue, alt: "Vue" },
-  { logoSRC: LogoNuxt, alt: "Nuxt" },
+  { logoSRC: LogoVue, label: "Vue" },
+  { logoSRC: LogoNuxt, label: "Nuxt" },
   {
     logoSRC: LogoTailwind,
-    alt: "tailwind"
+    label: "Tailwind"
   },
   {
     logoSRC: LogoScss,
-    alt: "scss"
+    label: "Scss"
   },
   {
     logoSRC: LogoBootstrap,
-    alt: "bootstrap"
+    label: "Bootstrap"
   },
   {
     logoSRC: LogoJest,
-    alt: "jest"
+    label: "jest"
   },
   {
     logoSRC: LogoGit,
-    alt: "git"
+    label: "Git"
   },
   {
     logoSRC: LogoFigma,
-    alt: "figma"
+    label: "Figma"
   },
   {
     logoSRC: LogoGithub,
-    alt: "github"
-  },
-  {
-    logoSRC: LogoJava,
-    alt: "Java"
-  },
-  {
-    logoSRC: LogoMysql,
-    alt: "mysql"
-  },
-  {
-    logoSRC: LogoMongo,
-    alt: "mongo"
+    label: "Github"
   },
   {
     logoSRC: LogoDocker,
-    alt: "Docker"
+    label: "Docker"
   },
   {
     logoSRC: LogoNode,
-    alt: "Node"
+    label: "Node"
   },
   {
     logoSRC: LogoGraphQL,
-    alt: "GraphQL"
+    label: "GraphQL"
   }
 ];

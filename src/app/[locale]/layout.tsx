@@ -12,7 +12,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Matheus Silva, Front-end developer",
-  description: "Desenvolvedor front end React, next, vue"
+  description: "Desenvolvedor front end React, next, vue",
+  keywords: "React, Next, Vue, Tailwind, Front-end, Developer, Desenvolvedor"
 };
 
 export default function LocaleLayout({
