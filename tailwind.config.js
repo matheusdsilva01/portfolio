@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1330px"
+      },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         boxShadow: {
@@ -15,18 +18,20 @@ export default {
         }
       },
       colors: {
+        "light-black": "#0E0E11",
+        "light-gray": "#18181B",
         primary: {
-          50: "#f7f7f7",
-          100: "#e3e3e3",
-          200: "#c8c8c8",
-          300: "#a4a4a4",
-          400: "#818181",
-          500: "#666666",
-          600: "#515151",
-          700: "#434343",
-          800: "#383838",
-          900: "#313131",
-          950: "#0c0c0c"
+          50: "#effaff",
+          100: "#dff3ff",
+          200: "#b8eaff",
+          300: "#78daff",
+          400: "#32c8ff",
+          500: "#06b1f1",
+          600: "#008ece",
+          700: "#0072a7",
+          800: "#025f8a",
+          900: "#084f72",
+          950: "#06324b"
         }
       },
       keyframes: {
