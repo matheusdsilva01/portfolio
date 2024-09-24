@@ -4,8 +4,16 @@ import ImgMathRandom from "@/assets/imgs-projects/math-random.png";
 import ImgPomodoroClock from "@/assets/imgs-projects/pomodoro-clock.png";
 import ImgRickAndMorty from "@/assets/imgs-projects/rick-and-morty.png";
 import ImgSports from "@/assets/imgs-projects/sports.png";
+import ImgSuperTicTacToe from "@/assets/imgs-projects/super-tic-tac-toe-beta.vercel.app_.png";
+
 export const projects = {
   en: [
+    {
+      name: "Super Tic Tac Toe",
+      description:
+        "Super Tic Tac Toe is a web application that allows you to play the classic Tic Tac Toe game, but with a special rule that allows several possibilities on the board.",
+      imgSRC: ImgSuperTicTacToe
+    },
     {
       name: "CTD E-Commerce",
       description:
@@ -56,6 +64,14 @@ export const projects = {
     }
   ],
   "pt-BR": [
+    {
+      name: "Super Jogo da velha",
+      description:
+        "Super Jogo da velha é uma aplicação web que permite jogar o clássico jogo da velha, mas com uma regra especial que permite várias possibilidades no tabuleiro.",
+      imgSRC: ImgSuperTicTacToe,
+      github: "https://github.com/matheusdsilva01/super-tic-tac-toe",
+      site: "https://super-tic-tac-toe-beta.vercel.app/"
+    },
     {
       name: "CTD E-Commerce",
       description:

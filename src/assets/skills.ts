@@ -24,68 +24,84 @@ import LogoVue from "@/assets/skills/vue.svg";
 export const skills = [
   {
     logoSRC: LogoHtml5,
-    label: "Html"
+    label: "Html",
+    alt: "Html"
   },
   {
     logoSRC: LogoCss3,
-    label: "Css"
+    label: "Css",
+    alt: "Css"
   },
   {
     logoSRC: LogoJavascript,
-    label: "Javascript"
+    label: "Javascript",
+    alt: "Javascript"
   },
   {
     logoSRC: LogoTypescript,
-    label: "Typescript"
+    label: "Typescript",
+    alt: "Typescript"
   },
   {
     logoSRC: LogoReact,
-    label: "React"
+    label: "React",
+    alt: "React"
   },
   {
     logoSRC: LogoNextjs,
-    label: "NextJs"
+    label: "NextJs",
+    alt: "NextJs"
   },
-  { logoSRC: LogoVue, label: "Vue" },
-  { logoSRC: LogoNuxt, label: "Nuxt" },
+  { logoSRC: LogoVue, label: "Vue", alt: "Vue" },
+  { logoSRC: LogoNuxt, label: "Nuxt", alt: "Nuxt" },
   {
     logoSRC: LogoTailwind,
-    label: "Tailwind"
+    label: "Tailwind",
+    alt: "Tailwind"
   },
   {
     logoSRC: LogoScss,
-    label: "Scss"
+    label: "Scss",
+    alt: "Scss"
   },
   {
     logoSRC: LogoBootstrap,
-    label: "Bootstrap"
+    label: "Bootstrap",
+    alt: "Bootstrap"
   },
   {
     logoSRC: LogoJest,
-    label: "jest"
+    label: "jest",
+    alt: "jest"
   },
   {
     logoSRC: LogoGit,
-    label: "Git"
+    label: "Git",
+    alt: "Git"
   },
   {
     logoSRC: LogoFigma,
-    label: "Figma"
+    label: "Figma",
+    alt: "Figma"
   },
   {
     logoSRC: LogoGithub,
-    label: "Github"
+    label: "Github",
+    alt: "Github"
   },
   {
     logoSRC: LogoDocker,
-    label: "Docker"
+    label: "Docker",
+    alt: "Docker"
   },
   {
     logoSRC: LogoNode,
-    label: "Node"
+    label: "Node",
+    alt: "Node"
   },
   {
     logoSRC: LogoGraphQL,
-    label: "GraphQL"
+    label: "GraphQL",
+    alt: "GraphQL"
   }
 ];
