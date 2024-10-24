@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 
 import { Analytics } from "@vercel/analytics/react";
@@ -26,6 +27,17 @@ export default function LocaleLayout({
   const messages = useMessages();
   return (
     <html lang={locale}>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-0DX50Q1XYE"
+      ></Script>
+      <Script>
+        {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-0DX50Q1XYE');`}
+      </Script>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={inter.className}>
           {children}
