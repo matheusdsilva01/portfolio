@@ -1,5 +1,4 @@
 import ImgBuscarFilmes from "@/assets/imgs-projects/buscar-filmes.png";
-import ImgCtdEcommerce from "@/assets/imgs-projects/ctd-e-commerce.png";
 import ImgMathRandom from "@/assets/imgs-projects/math-random.png";
 import ImgPomodoroClock from "@/assets/imgs-projects/pomodoro-clock.png";
 import ImgRickAndMorty from "@/assets/imgs-projects/rick-and-morty.png";
@@ -13,14 +12,6 @@ export const projects = {
       description:
         "Super Tic Tac Toe is a web application that allows you to play the classic Tic Tac Toe game, but with a special rule that allows several possibilities on the board.",
       imgSRC: ImgSuperTicTacToe
-    },
-    {
-      name: "CTD E-Commerce",
-      description:
-        "E-commerce project for CTD's Full Stack Web Development course, an e-commerce system for purchasing products online, with product listing, shopping cart, checkout and order completion.",
-      imgSRC: ImgCtdEcommerce,
-      github: "https://github.com/matheusdsilva01/CTD_Commerce_Frontend",
-      site: "https://ctd-commerce-frontend-omega.vercel.app/"
     },
     {
       name: "Pomodoro-clock",
@@ -71,14 +62,6 @@ export const projects = {
       imgSRC: ImgSuperTicTacToe,
       github: "https://github.com/matheusdsilva01/super-tic-tac-toe",
       site: "https://super-tic-tac-toe-beta.vercel.app/"
-    },
-    {
-      name: "CTD E-Commerce",
-      description:
-        "Projeto de e-commerce para o curso de Desenvolvimento Web Full Stack da CTD, um sistema de e-commerce para compra de produtos online, com listagem de produtos, carrinho de compras, checkout e finalização de pedido.",
-      imgSRC: ImgCtdEcommerce,
-      github: "https://github.com/matheusdsilva01/CTD_Commerce_Frontend",
-      site: "https://ctd-commerce-frontend-omega.vercel.app/"
     },
     {
       name: "Pomodoro-clock",
