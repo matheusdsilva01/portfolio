@@ -32,7 +32,7 @@ export const projects = {
     {
       name: "Math random",
       description:
-        "Project to generate random mathematical calculations using the 4 basic operations and with visualization of successes and errors.",
+        "Project for generating random mathematical calculations using the 4 basic operations aimed at children and with visualization of hits and errors.",
       imgSRC: ImgMathRandom,
       github: "https://github.com/matheusdsilva01/math-random",
       site: "https://math-random-chi.vercel.app/"
@@ -82,7 +82,7 @@ export const projects = {
     {
       name: "Math random",
       description:
-        "Projeto para geração de calculos matemáticos aleatórios usando as 4 operações básicas e com visualização de acertos e erros.",
+        "Projeto para geração de cálculos matemáticos aleatórios usando as 4 operações básicas direcionado para crianças e com visualização de acertos e erros.",
       imgSRC: ImgMathRandom,
       github: "https://github.com/matheusdsilva01/math-random",
       site: "https://math-random-chi.vercel.app/"
