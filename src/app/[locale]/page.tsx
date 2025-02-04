@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
 
 import { GithubIcon, GmailIcon, LinkedInIcon } from "@/assets/icons";
@@ -12,21 +12,6 @@ import axios from "axios";
 
 function Home() {
   const [disabled, setDisabled] = useState(false);
-  useEffect(() => {
-    (async () => {
-      if (process.env.NODE_ENV === "development") return;
-      try {
-        const response = await axios.get("https://ipapi.co/json/");
-        const location = Array.from(Object.entries(response.data))
-          .map(el => el.join(": "))
-          .join(", ");
-        await axios.post("/api/location", { location });
-      } catch (err) {
-        console.log(err);
-      }
-    })();
-  }, []);
-
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const { email, identifier, message } = e.currentTarget;
