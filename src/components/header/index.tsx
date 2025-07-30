@@ -7,23 +7,23 @@ import { useEffect, useState } from "react";
 const sections = [
   {
     label: "Sobre",
-    id: "about"
+    id: "#about"
   },
   {
     label: "Habilidades",
-    id: "skills"
+    id: "#skills"
   },
   {
     label: "Projetos",
-    id: "projects"
+    id: "#projects"
   },
   {
     label: "Contato",
-    id: "contact"
+    id: "#contact"
   }
 ];
 
-const Header = () => {
+export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Header = () => {
               key={id}
               className="cursor-pointer text-lg font-bold text-primary-50 opacity-50 transition-all hover:opacity-100"
             >
-              <Link href={`#${id}`} className="p-1">
+              <Link href={id} className="p-1">
                 {label}
               </Link>
             </li>
@@ -94,7 +94,7 @@ const Header = () => {
                   className="cursor-pointer text-lg font-bold text-primary-50 opacity-50 transition-all hover:opacity-100"
                   onClick={() => setMenuOpen(false)}
                 >
-                  <Link href={`#${id}`} className="p-1">
+                  <Link href={id} className="p-1">
                     {label}
                   </Link>
                 </li>
@@ -106,5 +106,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

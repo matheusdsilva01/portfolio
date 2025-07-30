@@ -1,10 +1,8 @@
 import { NextResponse } from "next/server";
 
-import axios from "axios";
-
 export async function POST(request: Request) {
   const body = await request.json();
-  const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOKDISCORD_URL;
+  const webhookUrl = process.env.WEBHOOK_DISCORD_URL;
   const messageData = {
     embeds: [
       {
@@ -17,7 +15,13 @@ export async function POST(request: Request) {
     ]
   };
   try {
-    await axios.post(webhookUrl, messageData);
+    await fetch(webhookUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(messageData)
+    });
   } catch (err) {
     console.log(err);
   }

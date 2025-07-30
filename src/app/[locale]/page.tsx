@@ -1,50 +1,12 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { toast } from "react-toastify";
 
-import { GithubIcon, GmailIcon, LinkedInIcon } from "@/assets/icons";
 import { projects } from "@/assets/projects";
 import { skills } from "@/assets/skills";
-import Header from "@/components/header";
-import axios from "axios";
+import { Form } from "@/components/Form";
+import { Header } from "@/components/header";
 
 function Home() {
-  const [disabled, setDisabled] = useState(false);
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const { email, identifier, message } = e.currentTarget;
-    if (!email.value || !identifier.value || !message.value) {
-      toast.warn("Preencha todos os campos");
-      return;
-    }
-    const fields = [
-      {
-        name: "Email",
-        value: email.value
-      },
-      {
-        name: "Nome",
-        value: identifier.value
-      },
-      {
-        name: "Mensagem",
-        value: message.value
-      }
-    ];
-    setDisabled(true);
-    try {
-      await axios.post("/api/message", fields);
-      toast.success("Mensagem enviada com sucesso!");
-    } catch (err) {
-      console.log(err);
-      toast.error("Ops, ocorreu um erro, entre em contato comigo via email");
-    } finally {
-      setDisabled(false);
-    }
-  }
-
   return (
     <>
       <Header />
@@ -52,7 +14,7 @@ function Home() {
         className="absolute bottom-0 left-0
          w-full object-cover md:top-60"
         type="image/svg+xml"
-        data="/desktop-plain (1).svg"
+        data="/desktop-plain.svg"
       ></object>
       <div className="content-wrapper relative min-h-[90vh]">
         <h1 className="mt-36 text-4xl font-extralight">Matheus Silva</h1>
@@ -78,7 +40,12 @@ function Home() {
             rel="noreferrer"
             className="w-8 transition-all hover:drop-shadow-[0_0_5px_#06b1f1] md:w-auto"
           >
-            <Image src={GithubIcon} width={39} height={39} alt="github icon" />
+            <Image
+              src={"/icons/github.svg"}
+              width={39}
+              height={39}
+              alt="github icon"
+            />
           </Link>
           <Link
             href="https://www.linkedin.com/in/matheus-silva-ti/"
@@ -87,7 +54,7 @@ function Home() {
             className="w-8 transition-all hover:drop-shadow-[0_0_5px_#06b1f1] md:w-auto"
           >
             <Image
-              src={LinkedInIcon}
+              src={"/icons/linkedin.svg"}
               width={39}
               height={39}
               alt="linkedin icon"
@@ -99,7 +66,12 @@ function Home() {
             rel="noreferrer"
             className="w-8 transition-all  hover:drop-shadow-[0_0_5px_#06b1f1] md:w-auto"
           >
-            <Image src={GmailIcon} width={39} height={39} alt="linkedin icon" />
+            <Image
+              src={"/icons/gmail.svg"}
+              width={39}
+              height={39}
+              alt="linkedin icon"
+            />
           </Link>
         </div>
       </div>
@@ -158,7 +130,7 @@ function Home() {
                     rel="noreferrer"
                   >
                     <Image
-                      src={GithubIcon}
+                      src={"/icons/github.svg"}
                       width={24}
                       height={24}
                       alt="github icon"
@@ -186,37 +158,7 @@ function Home() {
             entregar resultados de alta qualidade.
           </p>
         </div>
-        <div className="w-full max-w-2xl flex-1">
-          <h2 className="mb-6 md:text-3xl">Entre em contato</h2>
-          <form className="bg-light-gray px-6 py-7" onSubmit={onSubmit}>
-            <div className="flex flex-col gap-8">
-              <input
-                type="text"
-                name="identifier"
-                className="rounded-md bg-primary-950 px-2 py-3 text-sm outline-none transition-[box-shadow] placeholder:opacity-60 focus:ring-2 focus:ring-primary-800"
-                placeholder="Nome"
-              />
-              <input
-                type="text"
-                name="email"
-                className="rounded-md bg-primary-950 px-2 py-3 text-sm outline-none transition-[box-shadow] placeholder:opacity-60 focus:ring-2 focus:ring-primary-800"
-                placeholder="Email"
-              />
-              <textarea
-                name="message"
-                className="h-64 rounded-md bg-primary-950 px-2 py-3 text-sm outline-none transition-[box-shadow] placeholder:opacity-60 focus:ring-2 focus:ring-primary-800"
-                placeholder="Sua mensagem..."
-              ></textarea>
-            </div>
-            <button
-              disabled={disabled}
-              type="submit"
-              className="mt-7 w-full rounded-lg bg-gradient-to-b from-primary-400 to-primary-500 py-3 text-center transition-all hover:from-primary-500 hover:to-primary-600 active:from-primary-600 active:to-primary-700 disabled:bg-primary-950 disabled:text-primary-700"
-            >
-              Enviar
-            </button>
-          </form>
-        </div>
+        <Form />
       </div>
     </>
   );
