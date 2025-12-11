@@ -1,23 +1,25 @@
 import ImgBuscarFilmes from "@/assets/imgs-projects/buscar-filmes.png";
-import ImgLig3 from "@/assets/imgs-projects/ligation.png";
+import ImgLig4 from "@/assets/imgs-projects/ligation.png";
 import ImgMathRandom from "@/assets/imgs-projects/math-random.png";
 import ImgPomodoroClock from "@/assets/imgs-projects/pomodoro-clock.png";
-import ImgRickAndMorty from "@/assets/imgs-projects/rick-and-morty.png";
 import ImgSuperTicTacToe from "@/assets/imgs-projects/super-tic-tac-toe-beta.vercel.app_.png";
+import ImgWeatherApp from "@/assets/imgs-projects/weather.png";
 
 export const projects = {
   en: [
     {
-      name: "Super Tic Tac Toe",
+      name: "Weather App",
       description:
-        "Super Tic Tac Toe is a web application that allows you to play the classic Tic Tac Toe game, but with a special rule that allows several possibilities on the board.",
-      imgSRC: ImgSuperTicTacToe
+        "A fullstack weather application that provides current weather information using a weather API.",
+      imgSRC: ImgWeatherApp,
+      github: "https://github.com/matheusdsilva01/weather-fullstack/",
+      site: "https://github.com/matheusdsilva01/weather-fullstack/"
     },
     {
-      name: "Lig 3",
+      name: "Lig 4",
       description:
         "A mini game known as 'Ligation', where the objective is to connect three pieces of the same color in any direction.",
-      imgSRC: ImgLig3,
+      imgSRC: ImgLig4,
       github: "https://github.com/matheusdsilva01/ligation",
       site: "https://lig-4-virid.vercel.app/"
     },
@@ -28,6 +30,12 @@ export const projects = {
       imgSRC: ImgBuscarFilmes,
       github: "https://github.com/matheusdsilva01/buscar-filmes",
       site: "https://buscar-filmes.vercel.app/"
+    },
+    {
+      name: "Super Tic Tac Toe",
+      description:
+        "Super Tic Tac Toe is a web application that allows you to play the classic Tic Tac Toe game, but with a special rule that allows several possibilities on the board.",
+      imgSRC: ImgSuperTicTacToe
     },
     {
       name: "Pomodoro-clock",
@@ -44,30 +52,22 @@ export const projects = {
       imgSRC: ImgMathRandom,
       github: "https://github.com/matheusdsilva01/math-random",
       site: "https://math-random-chi.vercel.app/"
-    },
-    {
-      name: "Rick and Morty",
-      description:
-        "Project to search for characters from the Rick and Morty series, using the Rick and Morty API with favorites selection and character filter.",
-      imgSRC: ImgRickAndMorty,
-      github: "https://github.com/matheusdsilva01/rick-and-morty",
-      site: "https://rick-and-morty-livid.vercel.app/"
     }
   ],
   "pt-BR": [
     {
-      name: "Super Jogo da velha",
+      name: "Weather App",
       description:
-        "Super Jogo da velha é uma aplicação web que permite jogar o clássico jogo da velha, mas com uma regra especial que permite várias possibilidades no tabuleiro.",
-      imgSRC: ImgSuperTicTacToe,
-      github: "https://github.com/matheusdsilva01/super-tic-tac-toe",
-      site: "https://super-tic-tac-toe-beta.vercel.app/"
+        "Uma aplicação fullstack de clima que fornece informações meteorológicas atuais usando uma API de clima.",
+      imgSRC: ImgWeatherApp,
+      github: "https://github.com/matheusdsilva01/weather-fullstack/",
+      site: "https://github.com/matheusdsilva01/weather-fullstack/"
     },
     {
-      name: "Lig 3",
+      name: "Lig 4",
       description:
         "Um mini game conhecido como 'Ligação', onde o objetivo é conectar três peças da mesma cor em qualquer direção.",
-      imgSRC: ImgLig3,
+      imgSRC: ImgLig4,
       github: "https://github.com/matheusdsilva01/ligation",
       site: "https://lig-4-virid.vercel.app/"
     },
@@ -78,6 +78,14 @@ export const projects = {
       imgSRC: ImgBuscarFilmes,
       github: "https://github.com/matheusdsilva01/buscar-filmes",
       site: "https://buscar-filmes.vercel.app/"
+    },
+    {
+      name: "Super Jogo da velha",
+      description:
+        "Super Jogo da velha é uma aplicação web que permite jogar o clássico jogo da velha, mas com uma regra especial que permite várias possibilidades no tabuleiro.",
+      imgSRC: ImgSuperTicTacToe,
+      github: "https://github.com/matheusdsilva01/super-tic-tac-toe",
+      site: "https://super-tic-tac-toe-beta.vercel.app/"
     },
     {
       name: "Pomodoro-clock",
@@ -94,14 +102,6 @@ export const projects = {
       imgSRC: ImgMathRandom,
       github: "https://github.com/matheusdsilva01/math-random",
       site: "https://math-random-chi.vercel.app/"
-    },
-    {
-      name: "Rick and Morty",
-      description:
-        "Projeto para busca de personagens da série Rick and Morty, usando API do Rick and Morty com seleção de favoritos e filtro de personagens.",
-      imgSRC: ImgRickAndMorty,
-      github: "https://github.com/matheusdsilva01/rick-and-morty",
-      site: "https://rick-and-morty-livid.vercel.app/"
     }
   ]
 };
