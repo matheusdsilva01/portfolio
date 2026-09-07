@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../../../tailwind.config.js";
+@import "tailwindcss";
 
 body, html {
     background-color: #0E0E11;

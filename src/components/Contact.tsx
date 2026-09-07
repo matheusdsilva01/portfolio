@@ -16,22 +16,21 @@ const Contact = () => {
     const fields = [
       {
         name: "Email",
-        value: email.value
+        value: email.value,
       },
       {
         name: "Assunto",
-        value: subject.value
+        value: subject.value,
       },
       {
         name: "Mensagem",
-        value: message.value
-      }
+        value: message.value,
+      },
     ];
     try {
       await axios.post("/api/message", fields);
       toast.success("Mensagem enviada com sucesso!");
     } catch (err) {
-      console.log(err);
       toast.error("Ops, ocorreu um erro, entre em contato comigo via email");
     }
   }

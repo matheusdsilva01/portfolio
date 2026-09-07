@@ -10,17 +10,17 @@ export async function POST(request: Request) {
         title: `Mensagem de contato via portfolio`,
         description: "",
         color: 0xffffff,
-        fields: body
-      }
-    ]
+        fields: body,
+      },
+    ],
   };
   try {
     await fetch(webhookUrl, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(messageData)
+      body: JSON.stringify(messageData),
     });
   } catch (err) {
     console.log(err);

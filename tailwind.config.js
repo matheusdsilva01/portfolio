@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   // context next projetct
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",

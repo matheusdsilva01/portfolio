@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import { ToastContainer } from "react-toastify";
@@ -14,17 +15,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Matheus Silva, Front-end developer",
   description: "Desenvolvedor front end React, next, vue",
-  keywords: "React, Next, Vue, Tailwind, Front-end, Developer, Desenvolvedor"
+  keywords: "React, Next, Vue, Tailwind, Front-end, Developer, Desenvolvedor",
 };
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
-  params: { locale }
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const messages = useMessages();
+  const { locale } = await params;
+  const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <Script

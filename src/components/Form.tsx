@@ -16,29 +16,28 @@ export const Form = () => {
     const fields = [
       {
         name: "email",
-        value: email
+        value: email,
       },
       {
         name: "name",
-        value: name
+        value: name,
       },
       {
         name: "message",
-        value: message
-      }
+        value: message,
+      },
     ];
     setDisabled(true);
     try {
       await fetch("/api/message", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(fields)
+        body: JSON.stringify(fields),
       });
       toast.success("Mensagem enviada com sucesso!");
     } catch (err) {
-      console.log(err);
       toast.error("Ops, ocorreu um erro, entre em contato comigo via email");
     } finally {
       setDisabled(false);
