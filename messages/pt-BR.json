@@ -1,23 +1,113 @@
 {
-    "occupation": "Desenvolvedor Front End",
-    "mySkills": "Minhas Skills:",
+  "portfolio": {
+    "metadata": {
+      "title": "Matheus Silva — Desenvolvedor Fullstack",
+      "description": "Portfólio de Matheus Silva, desenvolvedor fullstack focado em aplicações web claras, confiáveis e orientadas a produto.",
+      "keywords": "React, Next.js, Node.js, PHP, TypeScript, Fullstack, Developer, Desenvolvedor"
+    },
+    "skipLink": "Pular para o conteúdo",
+    "role": "Desenvolvedor Fullstack",
+    "intro": "Construo aplicações web completas, do desenho da interface às APIs e regras que fazem o produto funcionar.",
+    "navigation": {
+      "label": "Navegação por seções",
+      "about": "Sobre",
+      "skills": "Competências",
+      "projects": "Projetos",
+      "articles": "Artigos",
+      "contact": "Contato"
+    },
+    "socialsLabel": "Redes sociais",
+    "githubLabel": "GitHub de Matheus Silva",
+    "linkedinLabel": "LinkedIn de Matheus Silva",
+    "devLabel": "Perfil de Matheus Silva no DEV Community",
+    "about": {
+      "title": "Sobre",
+      "paragraph1": "Sou um desenvolvedor fullstack que gosta de transformar problemas pouco definidos em aplicações claras e utilizáveis. Meu trabalho combina <strong>interfaces cuidadosas</strong>, regras de negócio compreensíveis e integrações confiáveis.",
+      "paragraph2": "No front-end, trabalho principalmente com React, Next.js, Vue e TypeScript. No back-end, desenvolvo APIs e serviços com Node.js e PHP, conectando aplicações a bancos relacionais e serviços externos.",
+      "paragraph3": "Também escrevo sobre o que aprendo. Documentar decisões me ajuda a organizar ideias, compartilhar contexto e construir software com mais intenção."
+    },
+    "skills": {
+      "title": "Competências",
+      "technologiesLabel": "Tecnologias de {area}",
+      "items": [
+        {
+          "area": "Interface",
+          "title": "Produtos claros e responsivos",
+          "description": "Construção de interfaces orientadas a componentes, acessíveis e consistentes em diferentes dispositivos.",
+          "technologies": ["React", "Next.js", "Figma", "Acessibilidade", "Responsividade", "TailwindCSS"]
+        },
+        {
+          "area": "Back-end",
+          "title": "APIs e regras de negócio",
+          "description": "Desenvolvimento de serviços, integrações e fluxos de dados que sustentam experiências web completas.",
+          "technologies": ["PHP", "Laravel", "NodeJS", "NestJS", "PostgreSQL"]
+        },
+        {
+          "area": "Arquitetura",
+          "title": "Código preparado para evoluir",
+          "description": "Organização modular, contratos explícitos e decisões técnicas que reduzem acoplamento e manutenção desnecessária.",
+          "technologies": ["SOLID", "BDD", "Boas Práticas", "Modular", "Clean Code"]
+        },
+        {
+          "area": "Qualidade",
+          "title": "Confiabilidade antes do deploy",
+          "description": "Validação de comportamento, atenção à performance e cuidado com os detalhes que afetam quem usa o produto.",
+          "technologies": ["Testes", "CI/CD", "Git", "Docker"]
+        }
+      ]
+    },
     "projects": {
-      "title": "Projetos:",
-      "visitWebSite": "Visitar site",
-      "visitRepository": "Visitar GitHub"
+      "title": "Projetos",
+      "openLabel": "Abrir {project}",
+      "sourceLabel": "Código-fonte de {project}",
+      "technologiesLabel": "Tecnologias de {project}",
+      "archive": "Ver arquivo completo de projetos",
+      "items": {
+        "reader": {
+          "name": "Reader.md",
+          "description": "Leitor de Markdown direto no navegador, criado para transformar arquivos locais em uma experiência de leitura limpa e sem distrações."
+        },
+        "movies": {
+          "name": "Buscar Filmes",
+          "description": "Aplicação para descobrir e pesquisar filmes, integrando dados do TMDB e conteúdo do YouTube em uma interface responsiva."
+        },
+        "ticTacToe": {
+          "name": "Super Jogo da Velha",
+          "description": "Releitura estratégica do jogo da velha, com múltiplos tabuleiros e regras que ampliam as possibilidades de cada partida."
+        },
+        "connectFour": {
+          "name": "Lig 4",
+          "description": "Jogo de estratégia para navegador com lógica de vitória multidirecional e interface adaptada para diferentes telas."
+        }
+      }
+    },
+    "articles": {
+      "title": "Artigos",
+      "devProfile": "Escrevendo no DEV",
+      "readingTime": "{year} · {minutes} min de leitura",
+      "empty": "Os artigos estão temporariamente indisponíveis.",
+      "archive": "Ver todos os artigos"
     },
     "contact": {
-      "title": "Entre em contato comigo",
-      "sendButton": "Enviar Mensagem",
-      "input": {
-        "email": "Email",
-        "subject": "Assunto",
-        "message": "Mensagem"
-      },
-      "placeholder": {
-        "email": "Digite seu email",
-        "subject": "Assunto",
-        "message": "Mensagem"
+      "title": "Contato",
+      "intro": "Tem um projeto, uma oportunidade ou uma ideia para discutir? Envie uma mensagem pelo formulário ou fale comigo pelas redes.",
+      "form": {
+        "nameLabel": "SEU NOME",
+        "namePlaceholder": "Como devo te chamar?",
+        "emailLabel": "SEU EMAIL",
+        "emailPlaceholder": "voce@empresa.com",
+        "messageLabel": "SOBRE O QUE VAMOS FALAR?",
+        "messagePlaceholder": "Projeto, oportunidade ou apenas uma boa conversa...",
+        "privacy": "Seus dados serão usados somente para responder à mensagem e processados por meio do Discord.",
+        "submit": "ENVIAR MENSAGEM",
+        "submitting": "ENVIANDO...",
+        "success": "Mensagem enviada com sucesso!",
+        "error": "Não foi possível enviar. Tente novamente pelas redes sociais."
       }
+    },
+    "footer": {
+      "builtBy": "Desenhado e desenvolvido por Matheus Silva. Construído com Next.js e TypeScript.",
+      "backToTop": "Voltar ao início ↑"
     }
+  }
 }

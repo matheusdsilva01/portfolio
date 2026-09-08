@@ -2,6 +2,7 @@ import ImgBuscarFilmes from "@/assets/imgs-projects/buscar-filmes.png";
 import ImgLig4 from "@/assets/imgs-projects/ligation.png";
 import ImgMathRandom from "@/assets/imgs-projects/math-random.png";
 import ImgPomodoroClock from "@/assets/imgs-projects/pomodoro-clock.png";
+import ImgReaderMd from "@/assets/imgs-projects/reader-md.png";
 import ImgSuperTicTacToe from "@/assets/imgs-projects/super-tic-tac-toe-beta.vercel.app_.png";
 import ImgWeatherApp from "@/assets/imgs-projects/weather.png";
 
@@ -105,3 +106,46 @@ export const projects = {
     }
   ]
 };
+
+export const featuredProjects = [
+  {
+    id: "reader",
+    name: "Reader.md",
+    description:
+      "Leitor de Markdown direto no navegador, criado para transformar arquivos locais em uma experiência de leitura limpa e sem distrações.",
+    imgSRC: ImgReaderMd,
+    github: "https://github.com/matheusdsilva01/reader.md",
+    site: "https://reader-md-nu.vercel.app/",
+    technologies: ["TypeScript", "React", "Next.js"]
+  },
+  {
+    id: "movies",
+    name: "Buscar Filmes",
+    description:
+      "Aplicação para descobrir e pesquisar filmes, integrando dados do TMDB e conteúdo do YouTube em uma interface responsiva.",
+    imgSRC: ImgBuscarFilmes,
+    github: "https://github.com/matheusdsilva01/buscar-filmes",
+    site: "https://buscar-filmes.vercel.app/",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "TMDB API"]
+  },
+  {
+    id: "ticTacToe",
+    name: "Super Jogo da Velha",
+    description:
+      "Releitura estratégica do jogo da velha, com múltiplos tabuleiros e regras que ampliam as possibilidades de cada partida.",
+    imgSRC: ImgSuperTicTacToe,
+    github: "https://github.com/matheusdsilva01/super-tic-tac-toe",
+    site: "https://super-tic-tac-toe-beta.vercel.app/",
+    technologies: ["Vue", "TypeScript", "Game logic"]
+  },
+  {
+    id: "connectFour",
+    name: "Lig 4",
+    description:
+      "Jogo de estratégia para navegador com lógica de vitória multidirecional e interface adaptada para diferentes telas.",
+    imgSRC: ImgLig4,
+    github: "https://github.com/matheusdsilva01/ligation",
+    site: "https://lig-4-virid.vercel.app/",
+    technologies: ["Vue", "JavaScript", "CSS"]
+  }
+];

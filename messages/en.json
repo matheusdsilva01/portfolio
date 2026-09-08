@@ -1,23 +1,113 @@
 {
-    "occupation": "Front End Developer",
-    "mySkills": "My Skills:",
+  "portfolio": {
+    "metadata": {
+      "title": "Matheus Silva — Fullstack Developer",
+      "description": "Matheus Silva's portfolio, a fullstack developer focused on clear, reliable, product-oriented web applications.",
+      "keywords": "React, Next.js, Node.js, PHP, TypeScript, Fullstack, Developer, Software Engineer"
+    },
+    "skipLink": "Skip to content",
+    "role": "Fullstack Developer",
+    "intro": "I build complete web applications, from interface design to the APIs and business rules that make the product work.",
+    "navigation": {
+      "label": "Section navigation",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "articles": "Articles",
+      "contact": "Contact"
+    },
+    "socialsLabel": "Social media",
+    "githubLabel": "Matheus Silva on GitHub",
+    "linkedinLabel": "Matheus Silva on LinkedIn",
+    "devLabel": "Matheus Silva on DEV Community",
+    "about": {
+      "title": "About",
+      "paragraph1": "I'm a fullstack developer who enjoys turning loosely defined problems into clear, usable applications. My work combines <strong>thoughtful interfaces</strong>, understandable business rules, and reliable integrations.",
+      "paragraph2": "On the front end, I mainly work with React, Next.js, Vue, and TypeScript. On the back end, I build APIs and services with Node.js and PHP, connecting applications to relational databases and external services.",
+      "paragraph3": "I also write about what I learn. Documenting decisions helps me organize ideas, share context, and build software more intentionally."
+    },
+    "skills": {
+      "title": "Skills",
+      "technologiesLabel": "{area} technologies",
+      "items": [
+        {
+          "area": "Interface",
+          "title": "Clear, responsive products",
+          "description": "Building accessible, component-driven interfaces that remain consistent across devices.",
+          "technologies": ["React", "Next.js", "Figma", "Accessibility", "Responsive Design", "TailwindCSS"]
+        },
+        {
+          "area": "Back end",
+          "title": "APIs and business rules",
+          "description": "Developing services, integrations, and data flows that support complete web experiences.",
+          "technologies": ["PHP", "Laravel", "NodeJS", "NestJS", "PostgreSQL"]
+        },
+        {
+          "area": "Architecture",
+          "title": "Code prepared to evolve",
+          "description": "Modular organization, explicit contracts, and technical decisions that reduce coupling and unnecessary maintenance.",
+          "technologies": ["SOLID", "BDD", "Best Practices", "Modular", "Clean Code"]
+        },
+        {
+          "area": "Quality",
+          "title": "Reliability before deployment",
+          "description": "Behavior validation, performance awareness, and attention to the details that affect product users.",
+          "technologies": ["Testing", "CI/CD", "Git", "Docker"]
+        }
+      ]
+    },
     "projects": {
-      "title": "Projects:",
-      "visitWebSite": "Visit Website",
-      "visitRepository": "Visit GitHub"
+      "title": "Projects",
+      "openLabel": "Open {project}",
+      "sourceLabel": "Source code for {project}",
+      "technologiesLabel": "Technologies used in {project}",
+      "archive": "View the complete project archive",
+      "items": {
+        "reader": {
+          "name": "Reader.md",
+          "description": "An in-browser Markdown reader that turns local files into a clean, distraction-free reading experience."
+        },
+        "movies": {
+          "name": "Movie Search",
+          "description": "An application for discovering and searching movies, combining TMDB data and YouTube content in a responsive interface."
+        },
+        "ticTacToe": {
+          "name": "Super Tic-Tac-Toe",
+          "description": "A strategic take on tic-tac-toe with multiple boards and rules that expand the possibilities of every match."
+        },
+        "connectFour": {
+          "name": "Connect Four",
+          "description": "A browser strategy game with multidirectional win logic and an interface adapted to different screen sizes."
+        }
+      }
+    },
+    "articles": {
+      "title": "Articles",
+      "devProfile": "Writing on DEV",
+      "readingTime": "{year} · {minutes} min read",
+      "empty": "Articles are temporarily unavailable.",
+      "archive": "View all articles"
     },
     "contact": {
-      "title": "Get in touch with me",
-      "sendButton": "Send Message",
-      "input": {
-        "email": "Email",
-        "subject": "Subject",
-        "message": "Message"
-      },
-      "placeholder": {
-        "email": "Your email address",
-        "subject": "Subject",
-        "message": "Message"
+      "title": "Contact",
+      "intro": "Have a project, an opportunity, or an idea to discuss? Send a message through the form or reach out through social media.",
+      "form": {
+        "nameLabel": "YOUR NAME",
+        "namePlaceholder": "What should I call you?",
+        "emailLabel": "YOUR EMAIL",
+        "emailPlaceholder": "you@company.com",
+        "messageLabel": "WHAT SHOULD WE TALK ABOUT?",
+        "messagePlaceholder": "A project, an opportunity, or simply a good conversation...",
+        "privacy": "Your data will only be used to reply to your message and will be processed through Discord.",
+        "submit": "SEND MESSAGE",
+        "submitting": "SENDING...",
+        "success": "Message sent successfully!",
+        "error": "The message could not be sent. Please try again through social media."
       }
+    },
+    "footer": {
+      "builtBy": "Designed and built by Matheus Silva. Built with Next.js and TypeScript.",
+      "backToTop": "Back to top ↑"
     }
+  }
 }

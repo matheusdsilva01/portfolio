@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import Gmail from "@/assets/icons/gmail.svg";
 import Linkedin from "@/assets/icons/linkedin.svg";
 import Github from "@/assets/skills/github.svg";
 
@@ -30,19 +29,6 @@ const CardLinks = () => {
             className="ml-2 text-sm hover:underline md:text-base"
           >
             github.com/matheusdsilva01
-          </a>
-        </span>
-      </div>
-      <div className="flex">
-        <Image src={Gmail} alt="gmail icon" className="w-8 md:w-10" />
-        <span>
-          <a
-            href="mailto:ms25022003@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 text-sm hover:underline md:text-base"
-          >
-            ms25022003@gmail.com
           </a>
         </span>
       </div>

@@ -1,22 +1,65 @@
 @config "../../../tailwind.config.js";
 @import "tailwindcss";
 
-body, html {
-    background-color: #0E0E11;
-    @apply text-primary-50;
-    @apply scroll-smooth
+:root {
+  --pointer-x: 50vw;
+  --pointer-y: 50vh;
 }
 
-@layer components {
-    .content-wrapper {
-        @apply m-auto max-w-screen-xl p-3 md:p-10;
-    }
+html {
+  scroll-behavior: smooth;
+  background: #0f172a;
+}
 
-    .glow {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-    }
+body {
+  margin: 0;
+  background: #0f172a;
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
-    .glow-sm {
-        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #0073e6, 0 0 10px #0073e6, 0 0 12px #0073e6, 0 0 15px #0073e6, 0 0 18px #0073e6;
-    }
+.pointer-light {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    600px circle at var(--pointer-x) var(--pointer-y),
+    rgba(29, 78, 216, 0.14),
+    transparent 80%
+  );
+}
+
+@media (min-width: 901px) and (max-height: 650px) {
+  .portfolio-sidebar {
+    padding-block: 42px 32px;
+  }
+
+  .portfolio-nav {
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .portfolio-intro {
+    margin-top: 12px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  .pointer-light {
+    display: none;
+  }
 }
