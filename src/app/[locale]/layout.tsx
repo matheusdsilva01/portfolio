@@ -7,12 +7,17 @@ import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const locales = ["en", "pt-BR"] as const;
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   if (!locales.includes(locale as (typeof locales)[number])) return {};
 
@@ -20,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    keywords: t("keywords")
+    keywords: t("keywords"),
   };
 }
 
@@ -41,6 +46,7 @@ export default async function LocaleLayout({
         <body className={inter.variable}>
           {children}
           <ToastContainer />
+          <Analytics />
         </body>
       </NextIntlClientProvider>
     </html>
