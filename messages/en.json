@@ -1,9 +1,9 @@
 {
   "portfolio": {
     "metadata": {
-      "title": "Matheus Silva — Fullstack Developer",
-      "description": "Matheus Silva's portfolio, a fullstack developer focused on clear, reliable, product-oriented web applications.",
-      "keywords": "React, Next.js, Node.js, PHP, TypeScript, Fullstack, Developer, Software Engineer"
+      "title": "Matheus Silva — Fullstack Developer | React, Next.js, Node.js, PHP, Laravel, TypeScript",
+      "description": "Portfolio of Matheus Silva, a fullstack developer focused on clear, reliable, and product-oriented web applications.",
+      "keywords": "React, Next.js, Node.js, PHP, Laravel, TypeScript, Fullstack, Developer, Software Engineer"
     },
     "skipLink": "Skip to content",
     "role": "Fullstack Developer",
@@ -34,7 +34,14 @@
           "area": "Interface",
           "title": "Clear, responsive products",
           "description": "Building accessible, component-driven interfaces that remain consistent across devices.",
-          "technologies": ["React", "Next.js", "Figma", "Accessibility", "Responsive Design", "TailwindCSS"]
+          "technologies": [
+            "React",
+            "Next.js",
+            "Figma",
+            "Accessibility",
+            "Responsive Design",
+            "TailwindCSS"
+          ]
         },
         {
           "area": "Back end",
@@ -46,7 +53,13 @@
           "area": "Architecture",
           "title": "Code prepared to evolve",
           "description": "Modular organization, explicit contracts, and technical decisions that reduce coupling and unnecessary maintenance.",
-          "technologies": ["SOLID", "BDD", "Best Practices", "Modular", "Clean Code"]
+          "technologies": [
+            "SOLID",
+            "BDD",
+            "Best Practices",
+            "Modular",
+            "Clean Code"
+          ]
         },
         {
           "area": "Quality",

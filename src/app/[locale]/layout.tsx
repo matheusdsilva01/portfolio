@@ -26,6 +26,22 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: t("keywords"),
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "website",
+      images: [
+        {
+          url: "https://portfolio-matheusdsilva01.vercel.app/logo.png",
+          width: 630,
+          height: 630,
+        },
+      ],
+    },
   };
 }
 

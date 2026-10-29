@@ -1,9 +1,9 @@
 {
   "portfolio": {
     "metadata": {
-      "title": "Matheus Silva — Desenvolvedor Fullstack",
+      "title": "Matheus Silva — Desenvolvedor Fullstack | React, Next.js, Node.js, PHP, Laravel, TypeScript",
       "description": "Portfólio de Matheus Silva, desenvolvedor fullstack focado em aplicações web claras, confiáveis e orientadas a produto.",
-      "keywords": "React, Next.js, Node.js, PHP, TypeScript, Fullstack, Developer, Desenvolvedor"
+      "keywords": "React, Next.js, Node.js, PHP, Laravel, TypeScript, Fullstack, Developer, Desenvolvedor"
     },
     "skipLink": "Pular para o conteúdo",
     "role": "Desenvolvedor Fullstack",
@@ -34,7 +34,14 @@
           "area": "Interface",
           "title": "Produtos claros e responsivos",
           "description": "Construção de interfaces orientadas a componentes, acessíveis e consistentes em diferentes dispositivos.",
-          "technologies": ["React", "Next.js", "Figma", "Acessibilidade", "Responsividade", "TailwindCSS"]
+          "technologies": [
+            "React",
+            "Next.js",
+            "Figma",
+            "Acessibilidade",
+            "Responsividade",
+            "TailwindCSS"
+          ]
         },
         {
           "area": "Back-end",
@@ -46,7 +53,13 @@
           "area": "Arquitetura",
           "title": "Código preparado para evoluir",
           "description": "Organização modular, contratos explícitos e decisões técnicas que reduzem acoplamento e manutenção desnecessária.",
-          "technologies": ["SOLID", "BDD", "Boas Práticas", "Modular", "Clean Code"]
+          "technologies": [
+            "SOLID",
+            "BDD",
+            "Boas Práticas",
+            "Modular",
+            "Clean Code"
+          ]
         },
         {
           "area": "Qualidade",
