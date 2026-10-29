@@ -20,7 +20,11 @@ export async function ArticlesSection({
   const t = await getTranslations("portfolio");
 
   return (
-    <section id="articles" className={sectionClass} aria-labelledby="articles-title">
+    <section
+      id="articles"
+      className={sectionClass}
+      aria-labelledby="articles-title"
+    >
       <div className="relative mb-5.5 flex items-center justify-between lg:mx-4.5 lg:justify-end">
         <h2 id="articles-title" className={sectionTitleClass}>
           {t("articles.title")}
@@ -31,7 +35,15 @@ export async function ArticlesSection({
             target="_blank"
             className="absolute right-0 z-21 -mt-8 flex items-center gap-2.25 text-[11px] text-slate-400 hover:text-teal-300 lg:static lg:mt-0"
           >
-            <Image src={profile.profile_image} width={34} height={34} alt="" className="rounded-full" />
+            <Image
+              src={profile.profile_image}
+              width={34}
+              height={34}
+              loading="lazy"
+              decoding="async"
+              alt=""
+              className="rounded-full"
+            />
             <span className="hidden sm:inline">{t("articles.devProfile")}</span>
           </Link>
         )}
@@ -53,6 +65,8 @@ export async function ArticlesSection({
                 <Image
                   src={article.cover_image || article.social_image}
                   fill
+                  loading="lazy"
+                  decoding="async"
                   sizes="(max-width: 720px) 35vw, 140px"
                   alt=""
                   className="object-cover transition-transform duration-300 group-hover:scale-[1.04]"

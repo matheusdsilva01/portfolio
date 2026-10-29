@@ -17,7 +17,11 @@ export async function ProjectsSection() {
   const t = await getTranslations("portfolio");
 
   return (
-    <section id="projects" className={sectionClass} aria-labelledby="projects-title">
+    <section
+      id="projects"
+      className={sectionClass}
+      aria-labelledby="projects-title"
+    >
       <h2 id="projects-title" className={sectionTitleClass}>
         {t("projects.title")}
       </h2>
@@ -39,6 +43,8 @@ export async function ProjectsSection() {
                 <Image
                   src={project.imgSRC}
                   alt={name}
+                  loading="lazy"
+                  decoding="async"
                   placeholder="blur"
                   className="h-16 w-26.25 rounded-sm border-2 border-slate-400/20 object-cover transition group-hover:border-slate-200/50 sm:h-20 sm:w-35"
                 />
